@@ -1,0 +1,49 @@
+#loginModal .form-group {
+    margin-bottom: 10px;
+}
+#loginModal .checkbox {
+    padding-top: 0px;
+}
+#loginModal input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+}
+.btn-register {
+    width: 100%;
+    color: #ffffff;
+    background-color: rgb(149,149,149);
+}
+.btn-register:focus,
+.btn-register:hover {
+    color: #ffffff;
+    background-color: rgb(149,149,149) !important;
+}
+.btn-login {
+    width: 100%;
+    color: #ffffff;
+    background-color: #2f7e7b;
+}
+.btn-login:focus,
+.btn-login:hover {
+    color: #ffffff;
+    background-color: #2f7e7b !important;
+}
+.btn-facebook {
+    width: 100%;
+    color: #ffffff;
+    background-color: #4A6EA9;
+}
+.btn-facebook:focus,
+.btn-facebook:hover {
+    color: #ffffff;
+    background-color: #4A6EA9 !important;
+}
+#loginModal a:hover {
+    text-decoration: none;
+}
+.border-bottom {
+    border-bottom: 1px solid #e0e0e0;
+}
+.padding-top-20 {
+    padding-top: 20px !important;
+}
