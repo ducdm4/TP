@@ -30,3 +30,5 @@ Route::get('/Admin/Delete/{id}', 'AdminManageController@Delete');
 Route::post('/Admin/Edit/Submit/{id}', 'AdminManageController@Edit');
 Route::post('/Admin/Add/Submit', 'AdminManageController@Add');
 
+test
+
