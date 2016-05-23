@@ -122,6 +122,14 @@ class AdminManageController extends Controller
         }
     }
 
+    public function Search(Request $request)
+    {
+        $keyword = $request->input('search');
+        $admins = Admin::where('username','like','%'.$keyword.'%')->get();
+        return view('back.manageAdmin.Index', ['admins' => $admins, 'keyword' => $keyword]);
+
+    }
+
     public function Delete($id)
     {
         $admin = Admin::where('id', $id)->first();

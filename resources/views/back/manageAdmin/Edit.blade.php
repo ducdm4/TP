@@ -4,22 +4,20 @@
     <div class="col-sm-offset-2 col-md-10 container">
         <div class="row mt20 mb20">
             <div class="padding-top-20">
-                <form action="{{url('/Admin/Edit/Submit')}}/{{$admin['id']}}" method="post" class="form-horizontal">
+                <form action="{{url('/Admin/Edit/Submit')}}/{{$admin['id']}}" method="get" class="form-horizontal">
                     {{--{!! Form::open(array('url'=>'blogpost/store','method'=>'POST')) !!}--}}
                     <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                     <div class="form-group">
                         <div class="col-md-offset-2 col-md-10">
                             <div class="col-md-offset-3 col-md-6">
-                                <?php if (isset($error)) {var_dump($errors->first('password'));} ?>
-                                @if ($errors->has('username'))<p
-                                        class="text-danger">{!!$errors->first('username')!!}</p>@endif
-                                <p class="alert-danger">{!! session('message') !!}</p>
-                                <p class="alert-success">{!! session('succMessage') !!}</p>
+                                @if ($errors->has('username'))
+                                    <p class="text-danger">{!!$errors->first('username')!!}</p>@endif
+                                    <p class="alert-danger">{!! session('message') !!}</p>
+                                    <p class="alert-success">{!! session('succMessage') !!}</p>
                             </div>
                         </div>
                         <div class="col-md-offset-2 col-md-10">
                             <label for="inputUsername" class="col-md-3 control-label">Tên đăng nhập : </label>
-
                             <div class="col-md-6">
                                 <input value="{!!$admin['username']!!}" type="text" name="username" class="form-control"
                                      disabled  id="inputUsername">

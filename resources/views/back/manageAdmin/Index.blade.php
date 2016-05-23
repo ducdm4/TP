@@ -3,9 +3,9 @@
 @section('backContent')
     <div class="col-sm-offset-2 col-md-10 container">
         <div class="row mt20 mb20">
-        <form action="" method="get" class="form-inline col-sm-offset-3 col-md-9">
+        <form action="{{url('/Admin/Search')}}" method="get" class="form-inline col-sm-offset-3 col-md-9">
             <div class="form-group col-md-5">
-                <input type="text" class="form-control width100" placeholder="Tìm kiếm admin">
+                <input type="text" name="search" class="form-control width100" placeholder="Tìm kiếm admin">
             </div>
             <button type="submit" class="btn btn-primary">Search</button>
             <a href="{{url('/Admin/Add')}}" class="btn btn-success">Thêm mới</a>
